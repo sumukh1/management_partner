@@ -1,0 +1,209 @@
+# This file configures the static analysis for your project.
+
+# The analysis options can be overridden by specifying a different file with
+# the --options flag when running analysis tools, e.g.:
+# > dart analyze --options path/to/other/analysis_options.yaml
+
+# See https://dart.dev/tools/analysis for details.
+
+analyzer:
+  language:
+    strict-raw-types: true
+
+linter:
+  rules:
+    # Recommended rules
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_function_literals_in_foreach_calls
+    - avoid_null_checks_in_equality_operators
+    - avoid_redundant_argument_values
+    - avoid_relative_lib_imports
+    - avoid_renaming_method_parameters
+    - avoid_types_as_parameter_names
+    - avoid_unnecessary_containers
+    - avoid_unsafe_nullable_check_around_if_null
+    - avoid_void_async
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - cascade_invocations
+    - curly_braces_in_flow_control_structures
+    - directives_ordering
+    - empty_catches
+    - empty_constructor_bodies
+    - empty_statements
+    - file_names
+    - flutter_style_todos
+    - hash_and_equals
+    - implementation_imports
+    - library_names
+    - library_prefixes
+    - no_duplicate_case_values
+    - non_constant_identifier_names
+    - null_check_on_nullable_type_parameter
+    - null_closures
+    - omit_local_variable_types
+    - prefer_adjacent_string_concatenation
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_contains
+    - prefer_equal_for_default_values
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_for_elements_to_map_fromIterable
+    - prefer_if_null_operators
+    - prefer_initializing_formals
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_is_not_null
+    - prefer_null_aware_operators
+    - prefer_single_quotes
+    - prefer_spread_collections
+    - prefer_typing_uninitialized_variables
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - sort_constructors_first
+    - sort_declarations_in_file
+    - sort_unnamed_constructors_first
+    - type_init_formals
+    - unnecessary_await_in_return
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    - unnecessary_getters_setters
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_checks
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_string_escapes
+    - unnecessary_string_interpolations
+    - unnecessary_this
+    - unnecessary_type_check
+    - unnecessary_type_interpolation
+    - use_full_hex_values_for_colors
+    - use_key_and_value_in_map_entries
+    - use_rethrow_when_possible
+    - use_super_parameters
+    - use_to_and_as_if_applicable
+    - valid_regexps
+    - void_checks
+
+    # Additional rules (consider enabling based on team preference)
+    # - always_declare_return_types
+    # - always_put_control_body_on_new_line
+    # - always_put_required_named_parameters_after_optional_independent
+    # - always_specify_types
+    # - avoid_bool_literals_in_conditional_expressions
+    # - avoid_catches_without_on_clauses
+    # - avoid_classes_with_only_static_members
+    # - avoid_double_and_int_checks
+    # - avoid_dynamic_calls
+    # - avoid_equals_and_hash_code_on_mutable_classes
+    # - avoid_escaping_inner_quotes
+    # - avoid_explicit_type_dereference
+    # - avoid_field_initializers_in_const_classes
+    # - avoid_implementing_value_types
+    # - avoid_multiple_declarations_per_line
+    # - avoid_positional_boolean_parameters
+    # - avoid_private_typedef_functions
+    # - avoid_returning_null
+    # - avoid_returning_null_for_future
+    # - avoid_returning_null_for_void
+    # - avoid_setters_without_getters
+    # - avoid_slow_async_io
+    # - avoid_types_on_closure_parameters
+    # - avoid_unnecessary_follow_ignores
+    # - avoid_unused_constructor_parameters
+    # - avoid_wakelock
+    # - avoid_web_libraries_in_flutter
+    # - avoid_widgets_with_executable_code
+    # - body_might_complete_normally_nullable
+    # - cancel_subscriptions
+    # - close_sinks
+    # - comment_references
+    # - constant_identifier_names
+    # - control_flow_in_finally
+    # - dangling_library_doc_comments
+    # - depend_on_referenced_packages
+    # - deprecated_member_use
+    # - deprecated_member_use_from_same_package
+    # - diagnostic_describe_all_properties
+    # - do_not_use_environment
+    # - empty_statements
+    # - enable_null_safety
+    # - eol_at_end_of_file
+    # - exhaustive_keys
+    # - expect_lints
+    # - tighten_type_inference_for_collections
+    # - flutter_consistency_keys
+    # - flutter_object_keys
+    # - flutter_preserve_framework_tree
+    # - flutter_test_assets
+    # - no_leading_underscores_for_local_identifiers
+    # - no_leading_underscores_for_private_identifiers
+    # - no_logic_in_create_state
+    # - no_runtimeType_toString
+    # - package_api_docs
+    # - package_names
+    # - package_prefixed_library_names
+    # - parameter_assignments
+    # - prefer_asserts_in_debug_mode
+    # - prefer_asserts_with_message
+    # - prefer_const_constructors_in_immutables
+    # - prefer_expression_function_bodies
+    # - prefer_generic_function_type_aliases
+    # - prefer_null_aware_method_calls
+    # - prefer_relative_imports
+    # - prefer_safe_mutable_to_immutable_collection_parameters
+    # - prefer_void_to_null
+    # - provide_deprecation_message
+    # - recursive_getters
+    # - require_trailing_commas
+    # - sized_box_shrink_expand
+    # - sort_code
+    # - sort_pub_dependencies
+    # - strict_raw_types
+    # - test_imports
+    # - throw_in_finally
+    # - type_annotate_public_apis
+    # - unawaited_futures
+    # - unnecessary_await_in_return
+    # - unnecessary_final
+    # - unnecessary_lambdas
+    # - unnecessary_library_directive
+    # - unnecessary_overrides
+    # - unnecessary_parenthesis
+    # - unnecessary_raw_strings
+    # - unnecessary_recursion
+    # - unnecessary_safety_check
+    # - unnecessary_statements
+    # - unnecessary_string_escapes
+    # - unnecessary_string_interpolations
+    # - unnecessary_this
+    # - unnecessary_type_check
+    # - unnecessary_type_interpolation
+    # - unreadable_literal_constraints
+    # - unsafe_html
+    # - use_build_context_synchronously
+    # - use_colored_box
+    # - use_decorated_box
+    # - use_if_null_to_convert_nulls_to_bools
+    # - use_is_even_rather_than_modulo
+    # - use_late_for_private_fields_and_variables
+    # - use_named_constants
+    # - use_raw_strings
+    # - use_rethrow_when_possible
+    # - use_saturated_conditional_expression
+    # - use_enums
+    # - use_setters_instead_of_properties
+    # - use_string_buffers
+    # - use_test_and_initialize_time
+    # - use_to_and_as_if_applicable
+    # - use_typedefs_for_function_types
+    # - use_key_and_value_in_map_entries
+    # - valid_regexps
+    # - void_checks
+    # - prefer_interpolation_to_compose_strings
