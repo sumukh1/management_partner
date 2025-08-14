@@ -5,6 +5,7 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.flutter.withPackages.web
     # pkgs.go
  pkgs.flutter
     # pkgs.python311
@@ -24,18 +25,18 @@
       enable = true;
       previews = {
         # web = {
-        #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
+        # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
         #   # and show it in IDX's web preview panel
-        #   command = ["npm" "run" "dev"];
-        #   manager = "web";
-        #   env = {
-        #     # Environment variables to set for your server
-        #     PORT = "$PORT";
-        #   };
-        # };
+        web = {
+          command = ["flutter" "run" "-d" "web" "--web-hostname=0.0.0.0" "--web-port=$PORT"];
+          manager = "web";
+          env = {
+            # Environment variables to set for your server
+            PORT = "$PORT";
+          };
+        };
       };
     };
-    # Workspace lifecycle hooks
     workspace = {
       # Runs when a workspace is first created
       onCreate = {

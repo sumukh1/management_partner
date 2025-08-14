@@ -12,22 +12,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: const Text('Register'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: 'Email'),
             ),
-            SizedBox(height: 12.0),
-            TextField(
+            const SizedBox(height: 12.0),
+            const TextField(
               decoration: InputDecoration(labelText: 'Password'),
               obscureText: true,
             ),
-            SizedBox(height: 12.0),
+            const SizedBox(height: 12.0),
             DropdownButtonFormField<String>(
               value: _selectedRole,
               items: <String>['Owner', 'Team Member']
@@ -42,20 +42,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   _selectedRole = newValue!;
                 });
               },
-              decoration: InputDecoration(labelText: 'Role'),
+              decoration: const InputDecoration(labelText: 'Role'),
             ),
-            SizedBox(height: 24.0),
+            const SizedBox(height: 24.0),
             ElevatedButton(
               onPressed: () {
                 // Implement registration logic
               },
-              child: Text('Register'),
+              child: const Text('Register'),
             ),
             TextButton(
               onPressed: () {
                 Navigator.pop(context); // Navigate back to login
               },
-              child: Text('Already have an account? Login'),
+              child: const Text('Already have an account? Login'),
             ),
           ],
         ),
